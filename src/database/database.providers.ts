@@ -12,7 +12,7 @@ export const databaseProviders = [
         password: 'docker',
         database: 'dev',
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
-        synchronize: true,
+        synchronize: true, //Utilizar true apenas para desenvolvimento, desabilitar em producao
       });
 
       return dataSource.initialize();
